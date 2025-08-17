@@ -1,5 +1,6 @@
 import "./globals.css";
-import "./globals.css";
+import Link from "next/link";
+
 export const metadata = {
   title: "Lipstick Baker",
   description: "Handcrafted custom cakes",
@@ -11,12 +12,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-[#faf7f5] text-neutral-900">
         <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-            <a href="/" className="font-serif text-xl">Lipstick Baker</a>
+            <Link href="/" className="font-serif text-xl">Lipstick Baker</Link>
             <nav className="flex gap-6 text-sm">
-              <a href="/" className="hover:opacity-70">Home</a>
-              <a href="/details" className="hover:opacity-70">FAQ</a>
-              <a href="/flavours" className="hover:opacity-70">Flavours</a>
-              <a href="/contact" className="hover:opacity-70">Contact + Custom Orders</a>
+              <Link href="/" className="hover:opacity-70">Home</Link>
+              <Link href="/details" className="hover:opacity-70">FAQ</Link>
+              <Link href="/flavours" className="hover:opacity-70">Flavours</Link>
+              <Link href="/contact" className="hover:opacity-70">Contact + Custom Orders</Link>
             </nav>
           </div>
         </header>

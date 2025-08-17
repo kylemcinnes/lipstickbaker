@@ -61,7 +61,7 @@ export default function ContactPage() {
         </div>
         <div className="flex items-center gap-2">
           <input id="ok" type="checkbox" className="rounded" />
-          <label htmlFor="ok">It's okay if you don't know yet! We can help you decide.</label>
+          <label htmlFor="ok">It&apos;s okay if you don&apos;t know yet! We can help you decide.</label>
         </div>
         <button type="submit" className="rounded-xl border px-4 py-2">Submit</button>
       </form>

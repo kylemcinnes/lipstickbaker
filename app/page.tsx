@@ -8,7 +8,7 @@ HANDCRAFTED
 WITH LOVE.`}
         </h1>
         <p className="mt-6 max-w-2xl mx-auto text-lg">
-          Taste and quality are our top priority. Not only visually appealing, your custom cake will be made to order with only the freshest of ingredients. It's subtle sweetness will allow for guilt-free indulges!
+          Taste and quality are our top priority. Not only visually appealing, your custom cake will be made to order with only the freshest of ingredients. It&apos;s subtle sweetness will allow for guilt-free indulges!
         </p>
       </section>
 
