@@ -1,3 +1,6 @@
+import { Header } from "@/components/Header"
+import { Footer } from "@/components/Footer"
+
 const FLAVOURS = [
   { name: "Strawberries + Cream", desc: "Vanilla cake layered with fresh strawberries and vanilla mousse" },
   { name: "Vanilla + Lemon", desc: "Vanilla cake paired with fresh lemon curd" },
@@ -13,7 +16,7 @@ const FLAVOURS = [
   { name: "Dulce De Leche", desc: "Dulce de leche filling paired with your choice of cake ( vanilla recommended )" },
 ];
 
-function Card({ name, desc }: { name: string; desc: string }) {
+function FlavourCard({ name, desc }: { name: string; desc: string }) {
   return (
     <div className="rounded-2xl border p-6 bg-white">
       <h3 className="font-medium text-lg">{name}</h3>
@@ -24,11 +27,19 @@ function Card({ name, desc }: { name: string; desc: string }) {
 
 export default function FlavoursPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12">
-      <h1 className="text-3xl font-serif mb-8">Flavours</h1>
-      <div className="grid md:grid-cols-2 gap-6">
-        {FLAVOURS.map((f) => <Card key={f.name} {...f} />)}
-      </div>
-    </div>
+    <>
+      <Header />
+      <main className="pt-16 lg:pt-20">
+        <div className="mx-auto max-w-6xl px-4 py-12">
+          <h1 className="text-3xl font-serif mb-8">Flavours</h1>
+          <div className="grid md:grid-cols-2 gap-6">
+            {FLAVOURS.map((f) => (
+              <FlavourCard key={f.name} {...f} />
+            ))}
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }
