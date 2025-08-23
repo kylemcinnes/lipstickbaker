@@ -1,3 +1,7 @@
+import dynamic from "next/dynamic";
+
+const InstagramGrid = dynamic(() => import("@/components/InstagramGrid"));
+
 export default function HomePage() {
   return (
     <div className="mx-auto max-w-6xl px-4">
@@ -36,11 +40,7 @@ WITH LOVE.`}
 
       <section className="py-8">
         <h5 className="text-base font-semibold mb-4">INSTAGRAM</h5>
-        <div className="grid grid-cols-3 gap-2">
-          {Array.from({ length: 9 }).map((_, i) => (
-            <div key={i} className="aspect-square rounded-md bg-neutral-200" />
-          ))}
-        </div>
+        <InstagramGrid />
       </section>
     </div>
   );
